@@ -6,7 +6,6 @@ app = Flask(__name__)
 # Flask has rendered the contents of my index.html template.
 
 
-
 @app.route("/")
 def index():
     # instead of doing <h1>"Hello, World</h1>, we can use render_template"
@@ -23,6 +22,9 @@ def contact():
     return render_template("contact.html")
 
 
+@app.route("/careers")
+def careers():
+    return render_template("careers.html")
 
 
 if __name__ == "__main__":
