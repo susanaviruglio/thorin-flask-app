@@ -14,7 +14,7 @@ def index():
     # instead of doing <h1>"Hello, World</h1>, we can use render_template"
     return render_template("index.html")
 
-"hello"
+
 @app.route("/about")
 def about():
     data = []
